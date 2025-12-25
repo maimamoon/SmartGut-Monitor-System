@@ -1,0 +1,53 @@
+# 🩺 Smart Gut Monitor (SGM)
+
+> **An AI-powered IoT system for non-invasive bowel sound monitoring and automated diagnosis.**
+
+![Project Banner](https://via.placeholder.com/1000x300?text=Smart+Gut+Monitor+System) 
+*(Tip: Replace this link with a screenshot of your React Dashboard later)*
+
+## 📖 Overview
+**Smart Gut Monitor** is a complete end-to-end system designed to assist gastroenterologists in diagnosing bowel diseases (like IBS) using Artificial Intelligence. The system captures bowel sounds via a piezoelectric sensor, processes them using a deep learning model (**CRNN**), and provides real-time analysis through a web dashboard.
+
+## 🚀 Features
+- **Real-time Monitoring:** Live streaming of bowel sounds from ESP32 to the dashboard.
+- **AI Diagnosis:** Uses a **CRNN (Convolutional Recurrent Neural Network)** model to classify sounds as *Normal* or *Abnormal* with **99% Recall**.
+- **IoT Integration:** Seamless serial communication between hardware and software.
+- **Medical History:** Automatically saves analysis sessions to a **SQL Server** database for patient tracking.
+- **Interactive Dashboard:** User-friendly **React** interface for doctors.
+
+## 🏗️ System Architecture
+The system consists of four main layers:
+1.  **Hardware Layer:** Piezo Sensor & ESP32 (Signal Acquisition).
+2.  **Backend Layer:** FastAPI & Python (Data Processing & AI Inference).
+3.  **Database Layer:** MS SQL Server (Data Persistence).
+4.  **Frontend Layer:** React.js (Visualization & Control).
+
+## 🛠️ Tech Stack
+
+| Component | Technology Used |
+|-----------|----------------|
+| **Hardware** | ESP32, Piezoelectric Sensor, C++ (Arduino IDE) |
+| **AI Model** | PyTorch, CRNN (CNN + LSTM), Librosa (MFCC) |
+| **Backend** | Python, FastAPI, Uvicorn, PySerial, PyODBC |
+| **Frontend** | React.js, Axios, HTML/CSS |
+| **Database** | Microsoft SQL Server |
+
+## ⚙️ Installation & Setup
+
+### 1. Prerequisites
+- Python 3.8+
+- Node.js & npm
+- SQL Server (Express or Developer edition)
+- VS Code or PyCharm
+
+### 2. Backend Setup
+```bash
+# Clone the repository
+git clone [https://github.com/maimamoon/SmartGut-Monitor-System.git](https://github.com/maimamoon/SmartGut-Monitor-System.git)
+cd SmartGut-Monitor-System/backend
+
+# Install Python dependencies
+pip install fastapi uvicorn torch torchvision torchaudio pyserial librosa pyodbc numpy
+
+# Run the API Server
+uvicorn main:app --reload
