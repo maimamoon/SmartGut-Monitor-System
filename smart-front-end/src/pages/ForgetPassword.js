@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 
 export default function ForgetPassword() {
   return (
@@ -109,7 +109,7 @@ export default function ForgetPassword() {
 
         <p style={{ fontSize: "14px" }}>
           Remember your password?{" "}
-          <a href="/" style={{ color: "#334EAC", fontWeight: "600" }}>
+          <a href="/login" style={{ color: "#334EAC", fontWeight: "600" }}>
                   Login
               </a>
         </p>
@@ -117,3 +117,4 @@ export default function ForgetPassword() {
     </div>
   );
 }
+
