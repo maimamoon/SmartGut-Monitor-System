@@ -1,0 +1,16 @@
+# --- Web Framework & API ---
+fastapi
+uvicorn
+
+# --- AI & Deep Learning ---
+torch
+torchvision
+torchaudio
+numpy
+librosa
+
+# --- Hardware Communication (ESP32) ---
+pyserial
+
+# --- Database (SQL Server) ---
+pyodbc
