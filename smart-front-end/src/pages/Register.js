@@ -104,7 +104,7 @@ export default function Register() {
 
               <p className="text-center mt-3" style={{ fontSize: "14px" }}>
                 Already have an account?
-                <a href="/" style={{ color: "#2d47b9", fontWeight: "600" }}>
+                <a href="/login" style={{ color: "#2d47b9", fontWeight: "600" }}>
                   Login
               </a>
                 
@@ -116,3 +116,4 @@ export default function Register() {
       </div> 
   );
 }
+
